@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  background-image: url("images/pattern-background-desktop.svg");
+  background-color: hsl(225, 100%, 94%);
+}
+
+a {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+}
+
+h1,
+h3 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+p {
+  font-size: 16px;
+  color: hsl(224, 23%, 55%);
+}
+
+.row {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.card {
+  background-color: #fff;
+  border-radius: 16px;
+  width: 448px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.card-text {
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  padding: 10px 50px;
+  margin-top: 10px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.card-content {
+  background-color: hsl(225, 100%, 98%);
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 350px;
+  margin: auto;
+}
+.card-content img {
+  width: 20%;
+}
+
+.change {
+  margin-left: auto;
+}
+
+.change a {
+  color: hsl(245, 75%, 52%);
+}
+
+.change a:hover {
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.payment {
+  text-align: center;
+}
+.payment button {
+  padding: 15px 90px;
+  border-radius: 10px;
+  background-color: hsl(245, 75%, 52%);
+  margin: 30px 0px 20px 0px;
+  color: #fff;
+  border: none;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+.payment button:hover {
+  background-color: hsl(224, 23%, 55%);
+  color: #fff;
+}
+
+.cancel {
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.cancel a {
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+}
+
+.cancel a:hover {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+
+/* Mobile screens */
+
+@media screen and (max-width: 375px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  body {
+    background-image: url(images/pattern-background-mobile.svg);
+    background-color: hsl(225, 100%, 94%);
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .row {
+    margin-top: 20px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card-content {
+    width: 300px;
+    padding: 1rem;
+    gap: 20px;
+  }
+
+  .payment button {
+    width: 300px;
+    padding: 20px 60px;
+  }
+
+  .card-text {
+    padding: 10px 50px;
+  }
+}
+
+/* Large screens */
+@media screen and (max-width: 1440px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  body {
+    background-repeat: no-repeat;
+  }
+}
