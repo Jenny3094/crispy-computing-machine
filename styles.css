@@ -15,7 +15,7 @@ a {
   font-weight: 700;
 }
 
-h1,
+h2,
 h3 {
   font-family: "Red Hat Display", sans-serif;
   font-weight: 900;
@@ -55,10 +55,10 @@ p {
   margin-bottom: 20px;
 }
 
-.card-content {
+.content-container {
   background-color: hsl(225, 100%, 98%);
   display: flex;
-  gap: 10px;
+  gap: 15px;
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem;
@@ -66,7 +66,7 @@ p {
   width: 350px;
   margin: auto;
 }
-.card-content img {
+.content-container img {
   width: 20%;
 }
 
@@ -91,7 +91,7 @@ p {
   padding: 15px 90px;
   border-radius: 10px;
   background-color: hsl(245, 75%, 52%);
-  margin: 30px 0px 20px 0px;
+  margin: 30px 0px 10px 0px;
   color: #fff;
   border: none;
   font-family: "Red Hat Display", sans-serif;
@@ -109,7 +109,7 @@ p {
 .cancel {
   margin-top: 20px;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .cancel a {
   text-decoration: none;
@@ -139,14 +139,14 @@ p {
   }
 
   .row {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   .card {
-    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
 
-  .card-content {
+  .content-container{
     width: 300px;
     padding: 1rem;
     gap: 20px;
@@ -170,5 +170,8 @@ p {
   }
   body {
     background-repeat: no-repeat;
+
   }
+
+
 }
